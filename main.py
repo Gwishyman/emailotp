@@ -10,10 +10,9 @@ from email.message import EmailMessage
 # =========================
 # CONFIG
 # =========================
-DISCORD_TOKEN = ""
-
-EMAIL_ADDRESS = "gwishygamedevelopment@gmail.com"
-EMAIL_PASSWORD = "glda cilg dbgo jhdh"
+DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
+EMAIL_ADDRESS = os.environ["EMAIL_ADDRESS"]
+EMAIL_PASSWORD = os.environ["EMAIL_PASSWORD"]
 
 OTP_EXPIRY_SECONDS = 300  # 5 minutes
 CSV_FILE = "stored.csv"
